@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Con fe me aceptas como practicante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        
+
+        <div class="menu container">
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="svg/menu.png" class="menu-icono" alt="menu">
+            </label>
+            
+        
+                <img src="svg/icono X.png" class="icono-x" alt="icono">
+           
+           
+            <nav class="navbar">
+                <ul>
+                    <li> <a href="#">Inicio</a></li>
+                    <li> <a href="#">Productos</a></li>
+                    <li> <a href="#">Contactos</a></li>
+                </ul>
+            </nav>
+            
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="svg/carrito.png" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Cantidad</th>
+                                        <th>Total</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table> 
+                            <template id="template-footer">
+                                <th scope="row" colspan="2">Total productos</th>
+                                <td>10</td>
+                                <td>
+                                    <btton class="btn-2" id="vaciar-carrito">
+                                        vaciar todo
+                                    </button>
+                                </td>
+                                <td class="font-weight-bold">$ <span>5000</span></td>
+                            </template>
+                            <a href="#" id="vaciar-carrito" class="btn-2">vaciar carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Cervezas</h1>
+            </div>
+        </div>
+    </header>
+        <div class="header-txt">
+        </div>
+    </div>
+    
+    
+
+
+    <main class="products container" id="lista-1">
+        <h2>Productos</h2>
+
+        <div class="category-list">
+            <a href="#" class="category-item" category="RUBIA">RUBIA</a>
+            <div></div>
+            <a href="#" class="category-item" category="MORENA">MORENA</a>
+            <div></div>
+            <a href="#" class="category-item" category="GRINGA">GRINGA</a>
+        </div>
+
+
+        <div class="product-content">
+
+            
+
+            <div class="product" category="RUBIA">
+                <img src="img/Cassels Milk.png" alt="">
+                <div class="product-txt">
+                    <h3>Cassels Milk Stou</h3>
+                    <p>Cassels & Sons Brewing. Cerveza porter y stout</p>
+                    <h5 class="Precio">$75.000</h5>
+                    <a href="#" class="agregar-carrito" data-id="1">AGREGAR</a>
+                </div>
+            </div>
+            <div class="product" category="RUBIA">
+                <img src="img/Camba Pale Ale.png" alt="">
+                <div class="product-txt">
+                    <h3>Camba Pale Pale</h3>
+                    <p>La Souche Franc - Bois d'hiver. Cerveza Pale.</p>
+                    <h5 class="Precio"><span id="total"></span> $85.300</h5>
+                    <a href="#" class="agregar-carrito" data-id="2">AGREGAR</a>
+                </div>
+            </div>
+            <div class="product" category="RUBIA">
+                <Cantidad cl></Cantidad>
+                <img src="img/Votus.png" alt="">
+                <div class="product-txt">
+                    <h3>Votus N° 001</h3>
+                    <p> Votus: India Pale Ale del año 2019 , N° 001 Red IPA.</p>
+                    <h5 class="Precio">$75.000</h5>
+                    <a href="#" class="agregar-carrito" data-id="3">AGREGAR</a>
+                </div>
+            </div>
+            <div class="product" category="RUBIA">
+                <img src="img/Prairie Artisan Noir.png" alt="">
+                <div class="product-txt">
+                    <h3>Prairie Artisian</h3>
+                    <p>Ales Prairie Noir Whiskey Barrel Aged Imperial </p>
+                    <h5 class="Precio">$85.300</h5>
+                    <a href="#" class="agregar-carrito" data-id="4">AGREGAR</a>
+                </div>
+            </div>
+            <div class="product" category="MORENA">
+                <img src="img/Lost abbey Citrus.png" alt="">
+                <div class="product-txt">
+                    <h3>Lost Abbey</h3>
+                    <p>The lost Abbey Citrus Sin American </p>
+                    <h5 class="Precio">$75.000</h5>
+                    <a href="#" class="agregar-carrito" data-id="5">AGREGAR</a>
+                </div>
+            </div>
+            <div class="product" category="MORENA">
+                <img src="img/Prairie Artisan Ales.png" alt="">
+                <div class="product-txt">
+                    <h3>Prairie</h3>
+                    <p>Ales Prairie Ales Paradise Imperial Stout</p>
+                    <h5 class="Precio">$85.300</h5>
+                    <a href="#" class="agregar-carrito" data-id="6">AGREGAR</a>
+                </div>
+            </div>
+            <div class="product" category="MORENA">
+                <img src="img/Redrise Hitachino nest.png" alt="">
+                <div class="product-txt">
+                    <h3>Redrice</h3>
+                    <p>Hitachino Nest Beer Red Rice Ale 330ml</p>
+                    <h5 class="Precio">$85.300</h5>
+                    <a href="#" class="agregar-carrito" data-id="7">AGREGAR</a>
+                </div>
+            </div>
+            <div class="product" category="GRINGA">
+                <img src="img/Cascade Apricot.png" alt="">
+                <div class="product-txt">
+                    <h3>Cascade</h3>
+                    <p>Cascade Brewing 2017 Brunch Line BA NORT</p>
+                    <h5 class="Precio">$175.000</h5>
+                    <a href="#" class="agregar-carrito" data-id="8">AGREGAR</a>
+                </div>
+            </div>
+            <div class="product" category="GRINGA">
+                <img src="img/Topa Topa.png" alt="">
+                <div class="product-txt">
+                    <h3>Topa Topa</h3>
+                    <p>Topa Topa BREWING CO. 5th year Anniversary</p>
+                    <h5 class="Precio">$85.300</h5>
+                    <a href="#" class="agregar-carrito" data-id="9">AGREGAR</a>
+                </div>
+            </div>
+            <div class="product" category="GRINGA">
+                <img src="img/Mira brune.png" alt="">
+                <div class="product-txt">
+                    <h3>Mira Brune N°6</h3>
+                    <p>Brown Ale, Brown Mira American Style</p>
+                    <h5 class="Precio">$375.000</h5>
+                    <a href="#" class="agregar-carrito btn-2" data-id="10">AGREGAR</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="icons container">
+        <div class="icon-1">
+
+            <div class="icon-txt">
+                <p>Sigue Mercando</p>
+                <h3>Vinos</h3>
+            </div>
+            <div class="icon-img">
+                <img src="svg/icono xd.png" alt="">
+             </div>
+        </div>
+    </section>
+
+    <footer class="footer1">
+        <section class="panels">
+            <div class="panel-1">
+                <h3>¿Podemos Ayudarle?</h3>
+            </div>
+        </section>
+
+         <section class="blog container">
+        
+            <div class="blog-1">
+                <img src="svg/icono mensaje.png" alt="">
+                <h3>CHAT</h3>
+            </div>
+
+            <div class="blog-1">
+             <img src="svg/icono llamada.png" alt="">
+                <h3>LLAMAR</h3>
+            </div>  
+        </section>
+    </footer>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>CONTACTOS</h3>
+                <ul>
+                    <li><a href="#">MEDIDAS DE SEGURIDAD(COVID-19)</a></li>
+                    <li><a href="#">CÓMO MERCAR</a></li>
+                    <li><a href="#">PROVEEDORES</a></li>
+                    <li><a href="#">CONTÁCTENOS</a></li>
+                    <li><a href="#">ZONA DE COBERTURA</a></li>
+                    <img src="svg/icono instagram.png" alt="">
+                </ul>
+                <ul>
+                    <li><a href="#">POLITICA DE TRATAMIENTO DE DATOS PERSONALES</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="programs.js"></script>
+    <script src="products.json"></script>
+<body>
+</html>
